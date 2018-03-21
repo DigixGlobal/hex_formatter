@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "ipfs_formatter/version"
+require "hex_formatter/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ipfs_formatter"
-  spec.version       = IpfsFormatter::VERSION
+  spec.name          = "hex_formatter"
+  spec.version       = HexFormatter::VERSION
   spec.authors       = ["Anthony Eufemio"]
   spec.email         = ["ace@dgx.io"]
 
   spec.summary       = %q{Format IPFS addresses to hex and back}
-  spec.description   = %q{Inspired by https://github.com/tinybike/multi-hash}
+  spec.description   = %q{Convert hexadecimal to Base58 formatted strings and back with support for Digix Asset IDs and IPFS hashes}
   spec.homepage      = "https://digix.global"
   spec.license       = "MIT"
 
