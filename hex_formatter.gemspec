@@ -33,5 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_dependency "base58"
+  spec.add_dependency 'typhoeus'
   spec.add_dependency "digix-eth", ">= 0.5.6"
 end
