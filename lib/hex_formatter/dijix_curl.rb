@@ -1,3 +1,4 @@
+require 'typhoeus'
 module HexFormatter
 
   class DijixCurl
@@ -5,7 +6,7 @@ module HexFormatter
     def get(hex)
       formatter = HexFormatter::Ipfs.new
       ipfs_address = formatter.encode(hex)
-      data = JSON.parse(Typhoeus::Request.get("https://ipfs.digix.global/ipfs/#{ipfs_address}").response_body)
+      data = JSON.parse(::Typhoeus::Request.get("https://ipfs.digix.global/ipfs/#{ipfs_address}").response_body)
       return data
     end
   end
