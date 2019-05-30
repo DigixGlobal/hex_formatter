@@ -1,4 +1,5 @@
 require "hex_formatter/version"
+require "hex_formatter/dijix_curl"
 
 require 'base58'
 require 'eth'

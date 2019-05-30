@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'hex_formatter'
+require 'active_support'
+require 'active_support/core_ext'
+
+hex = ARGV[0]
+
+curl = HexFormatter::DijixCurl.new
+result = curl.get(hex)
+
+puts JSON.pretty_generate(result)
+
